@@ -1,0 +1,3 @@
+[repositories]
+[repositories.repo]
+url = "https://pypi.org/simple"

@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package demo;
+
+service Demo {
+  rpc Plus (PlusRequest) returns (PlusResponse) {}
+}
+
+message PlusRequest {
+  repeated int32 x = 1;
+}
+
+message PlusResponse {
+  int32 msg_code = 1;
+  string msg_info = 2;
+  int32 sum = 3;
+}
